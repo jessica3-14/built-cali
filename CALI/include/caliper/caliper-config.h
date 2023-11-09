@@ -1,0 +1,50 @@
+#ifndef CALIPER_CONFIG_H
+#define CALIPER_CONFIG_H
+
+/* #undef CALIPER_HAVE_OMPT */
+/* #undef CALIPER_HAVE_MPI */
+/* #undef CALIPER_HAVE_MPIT */
+/* #undef CALIPER_HAVE_LIBUNWIND */
+/* #undef CALIPER_HAVE_LIBCURL */
+/* #undef CALIPER_HAVE_PAPI */
+/* #undef CALIPER_HAVE_LIBPFM */
+/* #undef CALIPER_HAVE_SAMPLER */
+/* #undef CALIPER_HAVE_NVTX */
+/* #undef CALIPER_HAVE_TAU */
+/* #undef CALIPER_HAVE_VTUNE */
+#define CALIPER_HAVE_GOTCHA
+/* #undef CALIPER_HAVE_SOS */
+/* #undef CALIPER_HAVE_CUPTI */
+/* #undef CALIPER_HAVE_LIBDW */
+/* #undef CALIPER_HAVE_VTUNE */
+/* #undef CALIPER_HAVE_ADIAK */
+/* #undef CALIPER_HAVE_PCP */
+/* #undef CALIPER_HAVE_VARIORUM */
+/* #undef CALIPER_HAVE_ROCTX */
+/* #undef CALIPER_HAVE_ROCTRACER */
+/* #undef CALIPER_HAVE_UMPIRE */
+/* #undef CALIPER_HAVE_CRAYPAT */
+
+/* #undef CALIPER_REDUCED_CONSTEXPR_USAGE */
+
+/* #undef CALIPER_MPIWRAP_USE_GOTCHA */
+
+/* #undef CALIPER_ENABLE_HISTOGRAMS */
+
+/* #undef CALIPER_BUILD_TESTING */
+
+#ifdef CALIPER_REDUCED_CONSTEXPR_USAGE
+#define CONSTEXPR_UNLESS_PGI 
+#else
+#define CONSTEXPR_UNLESS_PGI constexpr
+#endif
+
+// Version information -- numerical and a version string
+#define CALIPER_MAJOR_VERSION 2
+#define CALIPER_MINOR_VERSION 11
+#define CALIPER_PATCH_VERSION 0
+#define CALIPER_VERSION       "2.11.0-dev"
+
+/* #undef TEST_USE_OMP */
+
+#endif // CALIPER_CONFIG_H

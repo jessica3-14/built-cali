@@ -1,0 +1,8 @@
+Name: caliper
+Description: Caliper is a generic context annotation system.
+Version: 2.11.0-dev
+prefix=/home/jessicavwlms/CALI
+includedir=/home/jessicavwlms/CALI/include
+libdir=/home/jessicavwlms/CALI/lib64
+Libs: -L${libdir} -lcaliper
+Cflags: -I${includedir}
